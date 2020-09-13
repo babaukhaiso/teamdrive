@@ -1,0 +1,184 @@
+
+
+<html lang="us-en">
+<head>
+    <meta charset="utf-8">
+    <title>Create Google Shared Drive - Bhadoo Cloud</title>
+    <meta name="robots" content="noindex">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://upload.cc/i1/2020/09/13/PpEwVH.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://upload.cc/i1/2020/09/13/PpEwVH.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://upload.cc/i1/2020/09/13/PpEwVH.png">
+    <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.0/css/mail-box-style.css" integrity="sha256-MXCVuCLGn34iVReQoHZzuEi5fjt0WH3YGxMUrRsGpgU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.0/css/classic-button.css" integrity="sha256-2O3BzKqYcXKGjs+J3+o9xNpfM0E2iKYC69I6oI73Yoc=" crossorigin="anonymous">
+</head>
+<body style="background-image: url('https://upload.cc/i1/2020/09/13/c8kQPd.jpg');">
+    <br>
+    <center>
+        <a href="/"><img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/HashHackers/logo/logo-white-d.svg" height="25px"></a>
+        <br>
+        <br>
+    </center>
+    <main>
+        <div class="container min-height">
+            <div>
+                <div class="card waiting-screen">
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 text-center">
+                                <h1><img src="//cdn.jsdelivr.net/gh/jscdn/images@master/google/google-logo-t.png" alt="Google Logo" style="width:50px;height:50px;"></h1> 
+                                <h5>Create Shared Drive from:  4K皇家影城</h5>
+                                <p id="status">
+                                    Multiple back-end API requests, the process takes a long time, please be patient,
+                                    <span style="color: red"><b>Never Submit Again, It'll ruin the System</b></span>
+                                </p>
+                                <br />
+                                <div class="info-form text-left">
+                                    <form id="teamDriveForm">
+                                        <div class="form-group">
+                                            <label for="teamDriveName" class="sr-only">
+                                                Share Drive Name (can be changed later)
+                                            </label>
+                                            <input type="text" class="form-control" id="teamDriveName" placeholder="Name for your New Drive" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailAddress" class="sr-only">
+                                                Your GMail Address
+                                            </label>
+                                            <input type="email" class="form-control" id="emailAddress" placeholder="username@gmail.com" />
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="customTheme" value="" />
+                                            <label class="form-check-label" for="customTheme">
+                                                Custom Shared Drive Theme Header (can be changed later)
+                                            </label>
+                                        </div>
+                                        <div id="customThemeSection" class="d-none">
+                                            <div id="teamDriveThemePreview"></div>
+                                            <div id="teamDriveThemeOptions">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="teamDriveTheme" id="teamDriveThemeOptionRandom" value="random" checked />
+                                                    <label class="form-check-label" for="teamDriveThemeOptionRandom">
+                                                        random
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <center>
+                                            <button type="submit" class="btn btn-primary">Submit</button> <a class="btn btn-danger" href="https://github.com/ParveenBhadooOfficial" role="button">4K皇家影城</a> <a class="btn btn-info" href="https://t.me/gdvideoi_4k" role="button">Credits</a></center>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="loadMe" tabindex="-1" role="dialog" aria-labelledby="loadMeLabel">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <div class="d-flex justify-content-center">
+                                    <div class="spinner-border" role="status">
+                                        <span class="sr-only">Processing...</span>
+                                    </div>
+                                </div>
+                                <div clas="loader-txt">
+                                    <p>Processing...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</body>
+<script>
+    var teamDriveThemes;
+    $("input[id=customTheme]").change(function() {
+        if ($(this).is(":checked")) {
+            $("#customThemeSection").removeClass("d-none");
+        } else {
+            $("#customThemeSection").addClass("d-none");
+            $("input[name=teamDriveTheme]")[0].click();
+        }
+    });
+    $.get("/teamDriveThemes", function(json) {
+                teamDriveThemes = json.teamDriveThemes;
+                $.each(json.teamDriveThemes, function(i, item) {
+                            $("#teamDriveThemeOptions").append(`
+        <div class="form-check">
+           <input
+            class="form-check-input"
+            type="radio"
+            name="teamDriveTheme"
+            id="teamDriveThemeOption-${item.id}"
+            value="${item.id}"
+          />
+          <label class="form-check-label" for="teamDriveThemeOption-${item.id}">
+           ${item.id}
+          </label>
+        </div>
+        `);
+      });
+      $("input[name=teamDriveTheme]").change(function() {
+        var themeId = this.value;
+        if (themeId === "random") {
+          $("#teamDriveThemePreview").html("");
+        } else {
+          var theme = teamDriveThemes.find(function(t) {
+            return t.id == themeId;
+          });
+          $("#teamDriveThemePreview").html(
+            `
+          <div class="card" style="background-color: ${theme.colorRgb}">
+            <img src="${theme.backgroundImageLink}" class="card-img-top" alt="${theme.id}" />
+            <div class="card-body">
+              <h5 class="card-text" style="color: white">
+                ${theme.id}
+              </h5>
+            </div>
+          </div>
+      `
+          );
+        }
+      });
+      $("#teamDriveForm").on("submit", function(event) {
+        event.preventDefault();
+        $("#loadMe").modal({
+          backdrop: "static", //remove ability to close modal with click
+          keyboard: false, //remove option to close with keyboard
+          show: true //Display loader!
+        });
+        $.ajax({
+          type: "POST",
+          url: "/drive",
+          data: JSON.stringify({
+            teamDriveName: $("input[id=teamDriveName]").val(),
+            teamDriveThemeId: $("input[name=teamDriveTheme]:checked").val(),
+            emailAddress: $("input[id=emailAddress]").val()
+          }),
+          success: function(data) {
+            $("#loadMe").modal("hide");
+            document.getElementById("status").innerHTML = "<span style='color: green'><b>Successful<b></span>";
+          },
+          error: function(request, status, error) {
+            $("#loadMe").modal("hide");
+            document.getElementById("status").innerHTML = "<span style='color: red'><b>Failed due to : " + request.responseText + "<b></span>";
+          },
+          contentType: "application/json"
+        });
+      });
+    });
+</script>
+<style type="text/css">
+    .card-img-top {
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
+</main>
+</body>
+</html>
